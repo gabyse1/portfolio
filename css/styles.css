@@ -47,10 +47,6 @@ header {
   top: calc(50% - 44px / 2);
 }
 
-#checkbox-icon-menu {
-  display: none;
-}
-
 .normal-button {
   width: 40px;
   height: 40px;
@@ -140,9 +136,13 @@ header {
 }
 
 .headline-section {
+  min-height: 100vh;
   padding: 120px 24px;
   background: rgba(28, 26, 25, 1);
-  min-height: 100vh;
+  background-image: url('../images/illustration-header-mobile.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto 280px;;
   position: relative;
 }
 
@@ -176,7 +176,7 @@ header {
 }
 
 .description-text {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -209,19 +209,4 @@ header {
 .social-media-icon a {
   display: flex;
   text-decoration: none;
-}
-
-.illustration-header {
-  position: absolute;
-  width: auto;
-  height: auto;
-  right: 0%;
-  bottom: 0%;
-  display: flex;
-  overflow: hidden;
-}
-
-.illustration-header img {
-  height: 250px;
-  width: auto;
 }
