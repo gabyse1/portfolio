@@ -15,8 +15,8 @@ header {
   width: 100%;
   display: flex;
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   z-index: 100;
 }
 
@@ -44,7 +44,7 @@ header {
   text-decoration: none;
   position: absolute;
   left: 12px;
-  top: calc(50% - 44px/2);
+  top: calc(50% - 44px / 2);
 }
 
 #checkbox-icon-menu {
@@ -61,7 +61,7 @@ header {
   border-radius: 8px;
   position: absolute;
   right: 24px;
-  top: calc(50% - 40px/2);
+  top: calc(50% - 40px / 2);
 }
 
 .icon-mail {
@@ -85,11 +85,11 @@ header {
 .vector {
   width: 16px;
   height: 2px;
-  background: rgba(255,255,255, 1);
+  background: rgba(255, 255, 255, 1);
   border-radius: 18%;
   display: block;
   position: absolute;
-  left: calc(50% - 16px/2);
+  left: calc(50% - 16px / 2);
 }
 
 .vector-bar-1 {
@@ -97,7 +97,7 @@ header {
 }
 
 .vector-bar-2 {
-  top: calc(50% - 2px/2);
+  top: calc(50% - 2px / 2);
 }
 
 .vector-bar-3 {
@@ -108,15 +108,14 @@ header {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: left;
   align-items: center;
   height: 40px;
   position: absolute;
   right: 194px;
-  top: calc(50% - 40px/2);
-  display: none;
+  top: calc(50% - 40px / 2);
 }
 
 .nav-item {
@@ -125,7 +124,7 @@ header {
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -150,7 +149,7 @@ header {
 .content-text {
   flex: none;
   flex-grow: 0;
-  margin: 12px 0px;
+  margin: 12px 0;
 }
 
 .primary-text {
@@ -182,15 +181,15 @@ header {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   order: 2;
 }
 
 .social-media-icons {
   list-style: none;
   height: 40px;
-  padding: 0px;
-  margin: 12px 0px;
+  padding: 0;
+  margin: 12px 0;
   display: flex;
   align-items: center;
   flex: none;
