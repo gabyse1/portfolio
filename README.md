@@ -60,7 +60,7 @@ Give a ⭐️ if you like this project!
 
 - Linter https://github.com/microverseinc/linters-config
 - Readme template https://github.com/microverseinc/readme-template
--
+- Figma template https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=1%3A1471
 
 ## 📝 License
 
