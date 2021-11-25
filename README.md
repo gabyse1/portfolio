@@ -13,11 +13,6 @@ This project will be a website to show all our software projects.
 - HTML
 - CSS
 
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
-
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
