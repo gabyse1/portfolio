@@ -157,7 +157,7 @@ header {
   font-family: 'Noto Serif', serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 56px;
+  font-size: 54px;
   line-height: 64px;
   letter-spacing: 0.37px;
   color: rgba(255, 107, 0, 1);
@@ -177,7 +177,7 @@ header {
 }
 
 .description-text {
-  font-family: Poppins;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
