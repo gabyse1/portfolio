@@ -278,6 +278,7 @@ header {
 }
 
 .works-container > * {
+  width: 100%;
   flex-grow: 0;
   margin: 24px 0;
 }
@@ -318,7 +319,6 @@ header {
 }
 
 .works-container .works-display {
-  width: 100%;
   height: auto;
   padding: 0;
   display: flex;
@@ -327,14 +327,22 @@ header {
   order: 0;
 }
 
+.works-container .works-display > * {
+  flex-grow: 0;
+  margin: 12px 0;
+}
+
+.works-container .works-list {
+  order: 1;
+}
+
+.works-container .works-list > * {
+  flex-grow: 0;
+}
+
 .works-container .right-block > * {
   flex-grow: 0;
   margin: 6px 0;
-}
-
-.works-display > * {
-  flex-grow: 0;
-  margin: 12px 0;
 }
 
 .works-display .image-placeholder {
@@ -363,22 +371,14 @@ header {
   order: 2;
 }
 
-.works-display .right-block .enable-button {
+.works-display .right-block button {
   order: 3;
-}
-
-.works-list {
-  width: 100%;
-}
-
-.works-list > * {
-  flex-grow: 0;
 }
 
 .grid-container {
   display: grid;
-  grid-template-rows: (6, 386px);
-  grid-template-columns: (3, auto);
+  grid-template-rows: repeat(6, 386px);
+  grid-template-columns: repeat(3, auto);
   grid-column-gap: 0;
   grid-row-gap: 24px;
   justify-content: space-evenly;
@@ -421,7 +421,7 @@ header {
   order: 2;
 }
 
-.work-article .enable-button {
+.work-article button {
   width: 100%;
   order: 1;
 }
@@ -442,7 +442,7 @@ header {
   order: 1;
 }
 
-.aboutme-section .enable-button {
+.aboutme-section button {
   order: 2;
 }
 
