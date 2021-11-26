@@ -371,7 +371,7 @@ header {
   order: 2;
 }
 
-.works-display .right-block button {
+.works-display .post-button {
   order: 3;
 }
 
@@ -404,11 +404,6 @@ header {
   order: 0;
 }
 
-.works-list .work-article button {
-  width: 100%;
-  order: 1;
-}
-
 .work-article .right-block .post-title {
   color: rgba(255, 255, 255, 1);
   order: 0;
@@ -424,6 +419,11 @@ header {
   background: rgba(255, 255, 255, 0.24);
   border: 0;
   order: 2;
+}
+
+.work-article .post-button {
+  width: 100%;
+  order: 1;
 }
 
 .aboutme-section {
