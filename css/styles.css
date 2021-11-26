@@ -236,6 +236,22 @@ header {
   order: 1;
 }
 
+.page-section .post-button {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 107, 0, 1);
+  border: 0;
+  padding: 12px;
+}
+
 .page-section .works-container {
   width: 100%;
   padding: 0;
@@ -284,22 +300,6 @@ header {
   border: 1px solid rgba(137, 147, 164, 1);
   padding: 10px 12px;
   margin-right: 10px;
-}
-
-.works-container .post-button {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
-  color: rgba(255, 255, 255, 1);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background: rgba(255, 107, 0, 1);
-  border: 0;
-  padding: 12px;
 }
 
 .works-container .works-display {
