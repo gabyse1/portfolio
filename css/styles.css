@@ -233,7 +233,7 @@ header {
   order: 1;
 }
 
-.page-section .post-button {
+.page-section .enable-button {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -245,8 +245,26 @@ header {
   justify-content: center;
   align-items: center;
   background: rgba(255, 107, 0, 1);
-  border: 0;
+  border: 1px solid rgba(255, 107, 0, 1);
   padding: 12px;
+}
+
+.page-section .enable-button:hover {
+  background: rgba(255, 245, 225, 1);
+  border: 1px solid rgba(245, 88, 0, 1);
+  color: rgba(245, 88, 0, 1);
+}
+
+.page-section .enable-button:active {
+  background: rgba(224, 83, 4, 1);
+  border: 1px solid rgba(224, 83, 4, 1);
+  color: rgba(244, 241, 240, 1);
+}
+
+.page-section .enable-button:disabled {
+  background: rgba(244, 241, 240, 1);
+  border: 1px solid rgba(244, 241, 240, 1);
+  color: rgba(91, 89, 87, 1);
 }
 
 .page-section .works-container {
@@ -345,7 +363,7 @@ header {
   order: 2;
 }
 
-.works-display .right-block .post-button {
+.works-display .right-block .enable-button {
   order: 3;
 }
 
@@ -403,7 +421,7 @@ header {
   order: 2;
 }
 
-.work-article .post-button {
+.work-article .enable-button {
   width: 100%;
   order: 1;
 }
@@ -424,7 +442,7 @@ header {
   order: 1;
 }
 
-.aboutme-section .post-button {
+.aboutme-section .enable-button {
   order: 2;
 }
 
