@@ -129,6 +129,7 @@ header {
 
 .page-section {
   width: 100%;
+  padding: 100px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -137,7 +138,6 @@ header {
 
 .headline-section {
   min-height: 100vh;
-  padding: 120px 24px;
   background: rgba(28, 26, 25, 1);
   background-image: url('../images/illustration-header-mobile.png');
   background-repeat: no-repeat;
@@ -209,4 +209,204 @@ header {
 .social-media-icon a {
   display: flex;
   text-decoration: none;
+}
+
+.page-section > * {
+  flex-grow: 0;
+  margin: 12px 0;
+}
+
+.page-section h2 {
+  font-family: 'Noto Serif', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: -1px;
+  color: rgba(28, 26, 25, 1);
+  order: 0;
+}
+
+.page-section .bar-vector {
+  width: 100%;
+  border: none;
+  height: 0.25px;
+  color: rgba(33, 33, 33, 1);
+  background-color: rgba(33, 33, 33, 1);
+  order: 1;
+}
+
+.page-section .works-container {
+  width: 100%;
+  padding: 0;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 2;
+}
+
+.works-container > * {
+  flex-grow: 0;
+  margin: 24px 0;
+}
+
+.works-container .post-title {
+  font-family: 'Noto Serif', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.works-container .supporting-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(9, 30, 66, 1);
+}
+
+.works-container .tags {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.works-container .tags p {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  border: 1px solid rgba(137, 147, 164, 1);
+  padding: 10px 12px;
+  margin-right: 10px;
+}
+
+.works-container .post-button {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 107, 0, 1);
+  border: 0;
+  padding: 12px;
+}
+
+.works-container .works-display {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  order: 0;
+}
+
+.works-container .right-block > * {
+  flex-grow: 0;
+  margin: 6px 0;
+}
+
+.works-display > * {
+  flex-grow: 0;
+  margin: 12px 0;
+}
+
+.works-display .image-placeholder {
+  height: 237px;
+  width: 100%;
+  background-image: url(../images/img-placeholder-display.png);
+  background-repeat: no-repeat;
+}
+
+.works-display .right-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.works-display .right-block .post-title {
+  color: rgba(9, 30, 66, 1);
+  order: 0;
+}
+
+.works-display .right-block .supporting-text {
+  order: 1;
+}
+
+.works-display .right-block .tags {
+  order: 2;
+}
+
+.works-display .right-block .post-button {
+  order: 3;
+}
+
+.works-list {
+  width: 100%;
+}
+
+.works-list > * {
+  flex-grow: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: (6, 386px);
+  grid-template-columns: (3, auto);
+  grid-column-gap: 0;
+  grid-row-gap: 24px;
+  justify-content: space-evenly;
+}
+
+.grid-container .grid-item {
+  grid-column: 1 / 4;
+}
+
+.works-list .work-article {
+  height: 386px;
+  width: 100%;
+  background-image: url(../images/img-placeholder-articles.png);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.work-article .right-block {
+  padding: 8px 16px;
+  order: 0;
+}
+
+.work-article .right-block .post-title {
+  color: rgba(255, 255, 255, 1);
+  order: 0;
+}
+
+.work-article .right-block .supporting-text {
+  color: rgba(255, 255, 255, 1);
+  order: 1;
+}
+
+.work-article .right-block .tags p {
+  color: rgba(255, 255, 255, 1);
+  background: rgba(255, 255, 255, 0.24);
+  border: 0;
+  order: 2;
+}
+
+.work-article .post-button {
+  width: 100%;
+  order: 1;
 }
