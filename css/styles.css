@@ -442,7 +442,7 @@ header {
   order: 1;
 }
 
-.aboutme-section button {
+.aboutme-section .section-button {
   order: 2;
 }
 
