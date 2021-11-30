@@ -183,6 +183,41 @@ header {
   order: 2;
 }
 
+.enable-button {
+  height: 48px;
+  background: rgba(255, 107, 0, 1);
+  border: 1px solid rgba(255, 107, 0, 1);
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.enable-button:hover {
+  background: rgba(255, 245, 225, 1);
+  border: 1px solid rgba(245, 88, 0, 1);
+  color: rgba(245, 88, 0, 1);
+}
+
+.enable-button:active {
+  background: rgba(224, 83, 4, 1);
+  border: 1px solid rgba(224, 83, 4, 1);
+  color: rgba(244, 241, 240, 1);
+}
+
+.enable-button:disabled {
+  background: rgba(244, 241, 240, 1);
+  border: 1px solid rgba(244, 241, 240, 1);
+  color: rgba(91, 89, 87, 1);
+}
+
 .social-media-icons {
   list-style: none;
   height: 40px;
@@ -211,6 +246,22 @@ header {
   color: #dbd8d7;
 }
 
+.vertical-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.vertical-list li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 0;
+}
+
 .page-section > * {
   flex-grow: 0;
   margin: 12px 0;
@@ -233,45 +284,6 @@ header {
   height: 0.25px;
   background-color: rgba(33, 33, 33, 1);
   order: 1;
-}
-
-.page-section .enable-button,
-.enable-button {
-  height: 48px;
-  background: rgba(255, 107, 0, 1);
-  border: 1px solid rgba(255, 107, 0, 1);
-  padding: 12px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
-  color: rgba(255, 255, 255, 1);
-}
-
-.page-section .enable-button:hover,
-.enable-button:hover {
-  background: rgba(255, 245, 225, 1);
-  border: 1px solid rgba(245, 88, 0, 1);
-  color: rgba(245, 88, 0, 1);
-}
-
-.page-section .enable-button:active,
-.enable-button:active {
-  background: rgba(224, 83, 4, 1);
-  border: 1px solid rgba(224, 83, 4, 1);
-  color: rgba(244, 241, 240, 1);
-}
-
-.page-section .enable-button:disabled,
-.enable-button:disabled {
-  background: rgba(244, 241, 240, 1);
-  border: 1px solid rgba(244, 241, 240, 1);
-  color: rgba(91, 89, 87, 1);
 }
 
 .page-section .works-container {
@@ -544,22 +556,6 @@ footer .contact-form {
   text-align: center;
   color: #172b4d;
   margin-bottom: 50px;
-}
-
-.vertical-list {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.vertical-list li {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 12px 0;
 }
 
 .contact-form input,
