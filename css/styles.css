@@ -352,10 +352,6 @@ header {
   margin: 6px 0;
 }
 
-.bottom-navigation > * {
-  margin: 12px 0;
-}
-
 .works-display .image-placeholder {
   height: 237px;
   width: 100%;
@@ -530,7 +526,7 @@ footer {
   align-items: center;
 }
 
-.contact-form {
+footer .contact-form {
   width: calc(100% - 24px);
   display: flex;
   flex-direction: column;
@@ -539,7 +535,7 @@ footer {
   margin: 100px 24px;
 }
 
-.form-description {
+.contact-form .form-description {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -591,7 +587,7 @@ footer {
   background: #fbf8f7;
 }
 
-.bottom-navigation {
+.contact-form .bottom-navigation {
   width: 100%;
   border-top: 1px solid #dfe1e6;
   display: flex;
@@ -600,6 +596,9 @@ footer {
   align-items: center;
 }
 
+.contact-form .bottom-navigation > * {
+  margin: 12px 0;
+}
 
 .bottom-navigation .social-media-icons {
   order: 1;
