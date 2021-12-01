@@ -548,7 +548,7 @@ footer .contact-form {
 }
 
 .contact-form .form-description {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -563,7 +563,7 @@ footer .contact-form {
   width: 100%;
   border: none;
   padding: 5px 10px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
