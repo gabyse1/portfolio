@@ -36,7 +36,7 @@ header {
   height: 44px;
   padding: 10px 12px;
   color: rgba(255, 255, 255, 1);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -151,7 +151,7 @@ header {
 }
 
 .primary-text {
-  font-family: 'Noto Serif', serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 54px;
@@ -192,7 +192,7 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -268,7 +268,7 @@ header {
 }
 
 .page-section .secondary-text {
-  font-family: 'Noto Serif', serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
@@ -303,7 +303,7 @@ header {
 }
 
 .works-container .post-title {
-  font-family: 'Noto Serif', serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -327,7 +327,7 @@ header {
 }
 
 .works-container .tags p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -490,7 +490,7 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   color: rgba(255, 255, 255, 1);
   font-weight: bold;
@@ -583,7 +583,7 @@ footer .contact-form {
   background: #fbf8f7;
 }
 
-.contact-form .bottom-navigation {
+footer .bottom-navigation {
   width: 100%;
   border-top: 1px solid #dfe1e6;
   display: flex;
@@ -592,7 +592,7 @@ footer .contact-form {
   align-items: center;
 }
 
-.contact-form .bottom-navigation > * {
+footer .bottom-navigation > * {
   margin: 12px 0;
 }
 
