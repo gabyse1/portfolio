@@ -307,20 +307,20 @@ header {
 }
 
 .post-article .post-information {
-  color: rgba(255, 245, 225, 1);
+  color: rgba(255, 255, 225, 1);
   padding: 8px 16px;
 }
 
 .post-article .description-text {
   font-family: 'Inter', sans-serif;
-  color: rgba(255, 245, 225, 1);
+  color: rgba(255, 255, 225, 1);
 }
 
 .post-article .post-tags > * {
   background-color: rgba(255, 255, 225, 0.24);
 }
 
-.works-section .post-article .post-button {
+.post-article .post-button {
   width: 100%;
 }
 
