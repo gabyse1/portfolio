@@ -303,8 +303,16 @@ header {
 }
 
 .works-section .post-tags > * {
-  margin-right: 10px;
+  margin: 5px;
   font-weight: 500;
+}
+
+.works-section .post-tags li:first-child {
+  margin-left: 0;
+}
+
+.works-section .post-tags  li:last-child {
+  margin-right: 0;
 }
 
 .works-section .posts-display > * {
@@ -340,8 +348,8 @@ header {
 }
 
 .grid-container .post-article {
-  width: 327px;
-  height: 386px;
+  max-width: 327px;
+  height: auto;
   background-image: url(../images/img-placeholder-articles.png);
   background-repeat: no-repeat;
   display: flex;
