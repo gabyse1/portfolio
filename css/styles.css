@@ -229,6 +229,7 @@ header {
 }
 
 .headline-section {
+  overflow: hidden;
   background: rgba(28, 26, 25, 1);
   background-image: url(../images/illustration-header-mobile.svg);
   background-repeat: no-repeat;
@@ -238,7 +239,6 @@ header {
 }
 
 .headline-section .section-title {
-  overflow: hidden;
   animation-duration: 3s;
   animation-name: slidein;
 }
