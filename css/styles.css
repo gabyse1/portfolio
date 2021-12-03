@@ -576,7 +576,7 @@ footer .bottom-navigator {
   .headline-section .social-media-icons {
     flex-direction: column;
     position: absolute;
-    left: 30px;
+    left: 20px;
     top: calc(50% + 25px - (40px * 5) / 2);
   }
 
