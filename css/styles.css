@@ -311,7 +311,7 @@ header {
   margin-left: 0;
 }
 
-.works-section .post-tags  li:last-child {
+.works-section .post-tags li:last-child {
   margin-right: 0;
 }
 
@@ -344,7 +344,7 @@ header {
 }
 
 .grid-container .grid-item {
-  grid-column: 1fr;
+  grid-column: 100%;
 }
 
 .grid-container .post-article {
@@ -516,15 +516,13 @@ footer .bottom-navigator {
 }
 
 @media screen and (min-width: 768px) {
-
   .works-section .grid-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
 }
-  
-@media screen and (min-width: 992px) {
 
+@media screen and (min-width: 992px) {
   h1.section-title {
     font-size: 72px;
     line-height: 81px;
@@ -707,11 +705,10 @@ footer .bottom-navigator {
 }
 
 @media screen and (min-width: 1200px) {
-
   .posts-display .post-image {
     max-width: 600px;
   }
-  
+
   .works-section .grid-container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
