@@ -343,10 +343,6 @@ header {
   justify-content: space-evenly;
 }
 
-.grid-container .grid-item {
-  grid-column: 100%;
-}
-
 .grid-container .post-article {
   max-width: 327px;
   height: auto;
