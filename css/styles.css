@@ -237,6 +237,21 @@ header {
   padding: 150px 24px 100px 24px;
 }
 
+.headline-section .section-title {
+  overflow: hidden;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
 .headline-section .social-media-icons .link {
   color: rgba(219, 216, 215, 1);
 }
