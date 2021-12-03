@@ -179,6 +179,7 @@ header {
   from {
     transform: rotate(0);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -260,6 +261,7 @@ header {
     margin-left: 100%;
     opacity: 0;
   }
+
   to {
     margin-left: 0;
     opacity: 1;
@@ -652,8 +654,8 @@ footer .bottom-navigator {
     position: relative;
     transition: outline 0.5s ease, transform 0.5s ease;
   }
-  
-  .post-article:hover {
+
+  .grid-container .post-article:hover {
     outline: 1px solid rgba(137, 147, 164, 1);
     transform: scale(1.03);
     z-index: 20;
