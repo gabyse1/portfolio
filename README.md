@@ -6,7 +6,7 @@
 
 ![mobile screenshot](./app_screenshot.png)
 
-![desktop screenshot](./app_screenshot_desktop.png)
+![desktop screenshot](./app_screenshoot_desktop.png)
 
 This project will be a website to show all our software projects.
 
