@@ -41,6 +41,7 @@ body > * {
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: 1;
 }
 
 .ul-list .list-item-text {
@@ -405,10 +406,14 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+
+.aboutme-section .skills > * > * {
   margin-bottom: 16px;
 }
 
 .aboutme-section .skills > * span {
+  line-height: normal;
   padding-left: 32px;
   background-position: 0 13px;
   background-size: 18px 18px;
@@ -670,7 +675,7 @@ footer .bottom-navigator {
   }
 
   .aboutme-section .skills .ul-sublist li {
-    padding: 0;
+    padding-left: 0;
   }
 
   .contact-section .contact-form {
