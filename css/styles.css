@@ -131,6 +131,7 @@ h2.section-title {
   font-size: 17px;
   line-height: 24px;
   color: rgba(255, 255, 255, 1);
+  cursor: pointer;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
@@ -171,6 +172,16 @@ header {
 .top-navigator .logo {
   font-weight: bold;
   color: rgba(255, 255, 255, 1);
+  animation: rotatelogo 2s ease;
+}
+
+@keyframes rotatelogo {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .top-navigator .menu-list {
@@ -230,13 +241,13 @@ header {
 }
 
 .headline-section {
-  overflow: hidden;
   background: rgba(28, 26, 25, 1);
   background-image: url(../images/illustration-header-mobile.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 150px auto;
   padding: 150px 24px 100px 24px;
+  overflow: hidden;
 }
 
 .headline-section .section-title {
@@ -247,9 +258,11 @@ header {
 @keyframes slidein {
   from {
     margin-left: 100%;
+    opacity: 0;
   }
   to {
     margin-left: 0;
+    opacity: 1;
   }
 }
 
@@ -569,6 +582,10 @@ footer .bottom-navigator {
     padding: 16px 100px;
   }
 
+  .top-navigator .logo {
+    font-size: 30px;
+  }
+
   .top-navigator .menu-list {
     display: flex;
   }
@@ -631,7 +648,15 @@ footer .bottom-navigator {
   }
 
   .grid-container .post-article {
+    outline: 1px solid rgba(255, 255, 255, 1);
     position: relative;
+    transition: outline 0.5s ease, transform 0.5s ease;
+  }
+  
+  .post-article:hover {
+    outline: 1px solid rgba(137, 147, 164, 1);
+    transform: scale(1.03);
+    z-index: 20;
   }
 
   .post-article .post-image-desktop {
@@ -706,6 +731,11 @@ footer .bottom-navigator {
     text-align: left;
     margin-bottom: 0;
     padding-right: 24px;
+    transition: transform 1s ease;
+  }
+
+  .contact-form .description-text:hover {
+    transform: translate(5%, 0);
   }
 
   .contact-form .form-widgets {
