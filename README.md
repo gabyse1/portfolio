@@ -4,34 +4,44 @@
 
 > This repository contents the portafolio project.
 
-![mobile screenshot](./app_screenshot.png)
+![mobile screenshot](./app-screenshot-mobile.png)
 
-![desktop screenshot](./app_screenshoot_desktop.png)
+![desktop screenshot](./app-screenshot-desktop.png)
 
-This project will be a website to show all our software projects.
+This project will be a website to show the software developer presentation like skills and all their software projects.
+
 
 ## Built With
 
 - HTML
 - CSS
 
+
+## Location
+
+Website link: https://gabyse1.github.io/repo-portfolio/
+
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+
 - Have a computer
 
 ### Install
+
 - Install git on your local computer.
 - Clone this repository to your local computer. Choose the location you prefer.
 
 ### Usage
-- This project display a basig mobile skeleton of a portafolio.
+
+- This project display a basic mobile and desktop skeleton of a portafolio.
 
 ### Deployment
-- Execute the index.html file to display the project.
 
+- Execute the index.html file to display the project.
 
 
 ## Authors
