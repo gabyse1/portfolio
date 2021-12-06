@@ -19,7 +19,7 @@ This project will be a website to show the software developer presentation like 
 
 ## Location
 
-The website link: https://gabyse1.github.io/repo-portfolio/
+Website link: https://gabyse1.github.io/repo-portfolio/
 
 
 ## Getting Started
@@ -37,7 +37,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Usage
 
-- This project display a basig mobile skeleton of a portafolio.
+- This project display a basic mobile and desktop skeleton of a portafolio.
 
 ### Deployment
 
