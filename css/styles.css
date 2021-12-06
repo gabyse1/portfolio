@@ -171,17 +171,19 @@ header {
 
 .top-navigator .logo {
   font-weight: bold;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 107, 0, 1);
   animation: rotatelogo 2s ease;
 }
 
 @keyframes rotatelogo {
   from {
     transform: rotate(0);
-  }
+    color: rgba(255, 255, 255, 1);
+}
 
   to {
     transform: rotate(360deg);
+    color: rgba(255, 107, 0, 1);
   }
 }
 
