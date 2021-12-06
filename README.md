@@ -4,9 +4,9 @@
 
 > This repository contents the portafolio project.
 
-![mobile screenshot](./app_screenshot.png)
+![mobile screenshot](./app-screenshot-mobile.png)
 
-![desktop screenshot](./app_screenshoot_desktop.png)
+![desktop screenshot](./app-screenshot-desktop.png)
 
 This project will be a website to show the software developer presentation like skills and all their software projects.
 
@@ -17,9 +17,9 @@ This project will be a website to show the software developer presentation like 
 - CSS
 
 
-## Webpage link
+## Location
 
-[ Webpage link](https://gabyse1.github.io/repo-portfolio/)
+The website link: https://gabyse1.github.io/repo-portfolio/
 
 
 ## Getting Started
