@@ -179,7 +179,7 @@ header {
   from {
     transform: rotate(0);
     color: rgba(255, 255, 255, 1);
-}
+  }
 
   to {
     transform: rotate(360deg);
@@ -194,10 +194,6 @@ header {
 .top-navigator .menu-list .link {
   color: rgba(255, 255, 255, 1);
   transition: color 0.3s ease-in-out;
-}
-
-.top-navigator .menu-list .link:hover {
-  color: rgba(255, 107, 0, 1);
 }
 
 .top-navigator .menu-icon {
@@ -278,11 +274,6 @@ header {
 .headline-section .social-media-icons .link {
   color: rgba(219, 216, 215, 1);
   transition: color 0.05s ease-in-out, transform 0.2s ease-in-out;
-}
-
-.headline-section .social-media-icons .link:hover {
-  color: rgba(255, 255, 255, 1);
-  transform: scale(1.1);
 }
 
 .works-section .section-title {
@@ -553,16 +544,25 @@ footer .bottom-navigator {
   transition: transform 0.2s ease-in-out;
 }
 
-.bottom-navigator .social-media-icons .link:hover {
-  transform: scale(1.1);
-}
-
 .bottom-navigator .hr-bar {
   width: 134px;
   height: 5px;
   border-radius: 10px;
   background-color: #0d151e;
   margin-bottom: 15px;
+}
+
+.top-navigator .menu-list .link:hover {
+  color: rgba(255, 107, 0, 1);
+}
+
+.headline-section .social-media-icons .link:hover {
+  color: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+}
+
+.bottom-navigator .social-media-icons .link:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: 768px) {
