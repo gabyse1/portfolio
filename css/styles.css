@@ -171,17 +171,19 @@ header {
 
 .top-navigator .logo {
   font-weight: bold;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 107, 0, 1);
   animation: rotatelogo 2s ease;
 }
 
 @keyframes rotatelogo {
   from {
     transform: rotate(0);
+    color: rgba(255, 255, 255, 1);
   }
 
   to {
     transform: rotate(360deg);
+    color: rgba(255, 107, 0, 1);
   }
 }
 
@@ -191,6 +193,7 @@ header {
 
 .top-navigator .menu-list .link {
   color: rgba(255, 255, 255, 1);
+  transition: color 0.3s ease-in-out;
 }
 
 .top-navigator .menu-icon {
@@ -270,6 +273,7 @@ header {
 
 .headline-section .social-media-icons .link {
   color: rgba(219, 216, 215, 1);
+  transition: color 0.05s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .works-section .section-title {
@@ -537,6 +541,7 @@ footer .bottom-navigator {
 
 .bottom-navigator .social-media-icons .link {
   color: rgba(80, 95, 121, 1);
+  transition: transform 0.2s ease-in-out;
 }
 
 .bottom-navigator .hr-bar {
@@ -545,6 +550,19 @@ footer .bottom-navigator {
   border-radius: 10px;
   background-color: #0d151e;
   margin-bottom: 15px;
+}
+
+.top-navigator .menu-list .link:hover {
+  color: rgba(255, 107, 0, 1);
+}
+
+.headline-section .social-media-icons .link:hover {
+  color: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+}
+
+.bottom-navigator .social-media-icons .link:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: 768px) {
