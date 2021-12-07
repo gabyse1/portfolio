@@ -376,14 +376,14 @@ header {
   border: 1px solid rgba(137, 147, 164, 1);
 }
 
-.works-section .grid-container {
+.works-section .posts-list {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
   justify-content: space-evenly;
 }
 
-.grid-container .post-article {
+.posts-list .post-article {
   max-width: 327px;
   height: auto;
   background-image: url(../images/img-placeholder-articles.png);
@@ -576,7 +576,7 @@ footer .bottom-navigator {
 }
 
 @media screen and (min-width: 768px) {
-  .works-section .grid-container {
+  .works-section .posts-list {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
@@ -677,13 +677,13 @@ footer .bottom-navigator {
     line-height: 1.75rem;
   }
 
-  .grid-container .post-article {
+  .posts-list .post-article {
     outline: 1px solid rgba(255, 255, 255, 1);
     position: relative;
     transition: outline 0.5s ease, transform 0.5s ease;
   }
 
-  .grid-container .post-article:hover {
+  .posts-list .post-article:hover {
     outline: 1px solid rgba(137, 147, 164, 1);
     transform: scale(1.03);
     z-index: 20;
@@ -786,7 +786,7 @@ footer .bottom-navigator {
     max-width: 600px;
   }
 
-  .works-section .grid-container {
+  .works-section .posts-list {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
