@@ -535,7 +535,7 @@ header {
 .contact-form textarea:focus {
   outline-color: rgba(255, 107, 0, 1);
   outline-style: solid;
-}                          
+}
 
 footer .bottom-navigator {
   border-top: 1px solid #dfe1e6;
