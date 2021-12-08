@@ -75,7 +75,7 @@ h2.section-title {
   font-size: 3.375rem;
   line-height: 4rem;
   letter-spacing: 0.023125rem;
-  color: rgba(148, 62, 0, 1);
+  color: rgba(207, 87, 2, 1);
   width: 100%;
 }
 
@@ -120,8 +120,8 @@ h2.section-title {
 
 .enable-button {
   height: 48px;
-  background-color: rgba(148, 62, 0, 1);
-  border: 1px solid rgba(148, 62, 0, 1);
+  background-color: rgba(207, 87, 2, 1);
+  border: 1px solid rgba(207, 87, 2, 1);
   padding: 12px;
   display: flex;
   flex-direction: row;
@@ -182,7 +182,7 @@ header {
   }
 
   50% {
-    color: rgba(148, 62, 0, 1);
+    color: rgba(207, 87, 2, 1);
   }
 
   100% {
@@ -533,7 +533,7 @@ header {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  outline-color: rgba(148, 62, 0, 1);
+  outline-color: rgba(207, 87, 2, 1);
   outline-style: solid;
 }
 
@@ -563,7 +563,7 @@ footer .bottom-navigator {
 }
 
 .top-navigator .menu-list .link:hover {
-  color: rgba(148, 62, 0, 1);
+  color: rgba(207, 87, 2, 1);
 }
 
 .headline-section .social-media-icons .link:hover {
