@@ -49,8 +49,6 @@ body > * {
 }
 
 .ul-list .list-item-icon {
-  width: 40px;
-  height: 40px;
   padding: 8px;
 }
 
@@ -66,6 +64,17 @@ a.link {
 a.link-icon {
   font-size: 1.25rem;
   line-height: 1.5rem;
+}
+
+a.link-icon svg {
+  width: 20px;
+  height: 20px;
+  stroke: 0;
+  stroke-width: 0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: rgba(255, 255, 255, 1);
+  transition: fill 0.05s ease-in-out;
 }
 
 h1.section-title,
@@ -278,9 +287,13 @@ header {
   }
 }
 
-.headline-section .social-media-icons .link {
+.headline-section .social-media-icons .link-icon {
   color: rgba(219, 216, 215, 1);
   transition: color 0.05s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.headline-section .social-media-icons .link-icon svg {
+  fill: rgba(219, 216, 215, 1);
 }
 
 .works-section .section-title {
@@ -450,29 +463,30 @@ header {
   align-items: center;
 }
 
+.aboutme-section .skills .sublist-title-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.aboutme-section .skills .sublist-title-box svg {
+  width: 20px;
+  height: 20px;
+  fill: rgba(245, 88, 0, 1);
+}
+
 .aboutme-section .skills > * > * {
   margin-bottom: 16px;
 }
 
 .aboutme-section .skills > * span {
-  line-height: normal;
-  padding-left: 32px;
-  background-position: 0 13px;
-  background-size: 18px 18px;
-  background-repeat: no-repeat;
+  padding-left: 10px;
 }
 
-.aboutme-section .skills .languages-skills span {
-  background-image: url('../icons/rectangle-roted.png');
-  background-size: 22px 22px;
-}
-
-.aboutme-section .skills .frameworks-skills span {
-  background-image: url('../icons/rectangle.png');
-}
-
-.aboutme-section .skills .additional-skills span {
-  background-image: url('../icons/disc.png');
+.aboutme-section .skills .additional-skills svg,
+.aboutme-section .skills .frameworks-skills svg {
+  width: 16px;
+  height: 16px;
 }
 
 .aboutme-section .skills .ul-sublist {
@@ -520,7 +534,8 @@ header {
   line-height: 1.5rem;
   display: flex;
   align-items: center;
-  color: rgba(151, 148, 147, 1);
+  /* color: rgba(151, 148, 147, 1); */
+  color: rgba(100, 100, 147, 1);
   margin-bottom: 20px;
 }
 
@@ -557,6 +572,10 @@ footer .bottom-navigator {
   transition: transform 0.2s ease-in-out;
 }
 
+.bottom-navigator .social-media-icons .link-icon svg {
+  fill: rgba(80, 95, 121, 1);
+}
+
 .bottom-navigator .hr-bar {
   width: 134px;
   height: 5px;
@@ -572,6 +591,10 @@ footer .bottom-navigator {
 .headline-section .social-media-icons .link:hover {
   color: rgba(255, 255, 255, 1);
   transform: scale(1.1);
+}
+
+.headline-section .social-media-icons .link:hover svg {
+  fill: rgba(255, 255, 255, 1);
 }
 
 .bottom-navigator .social-media-icons .link:hover {
@@ -734,7 +757,7 @@ footer .bottom-navigator {
 
   .aboutme-section .skills {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
   }
 
@@ -744,7 +767,7 @@ footer .bottom-navigator {
   }
 
   .aboutme-section .skills .ul-sublist {
-    padding-left: 32px;
+    padding-left: 28px;
     align-items: flex-start;
   }
 
