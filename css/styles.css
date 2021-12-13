@@ -246,7 +246,7 @@ header.top-navigator {
 }
 
 .mobile-menu .list-item {
-  border-bottom: 1px solid #6F6C6B;
+  border-bottom: 1px solid #6f6c6b;
   width: 100%;
   justify-content: flex-start;
   padding-top: 24px;
@@ -255,6 +255,11 @@ header.top-navigator {
 
 .mobile-menu .link {
   font-size: 2rem;
+  font-weight: 700;
+}
+
+.menu-visible {
+  display: none;
 }
 
 .page-section {
@@ -619,7 +624,7 @@ footer .bottom-navigator {
   #nav--menu {
     display: flex;
   }
-  
+
   #contact-button {
     display: block;
   }

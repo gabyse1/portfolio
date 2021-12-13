@@ -12,6 +12,7 @@
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-NMSJZSX');</script>
   <!-- End Google Tag Manager -->
+  <script src="scripts/main.js" defer></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
@@ -50,17 +51,17 @@
     </nav>
     <a href="#" id="contact-button" class="link link-icon"><img src="images/envelope-regular-icon.svg"
         alt="envelope icon" class="contact-icon"></a>
-    <button id="menu-button" class="menu-button">
+    <button id="menu-button" class="menu-button toggle">
       <img class="menu-icon" src="images/hamburger-icon.svg" alt="menu-icon">
     </button>
   </header>
-  <section id="menu">
-    <button id="close-button" class="close-button"><img src="images/close-icon.svg" alt="" class="close-icon"></button>
+  <section id="menu" class="menu-visible">
+    <button id="close-button" class="close-button toggle"><img src="images/close-icon.svg" alt="" class="close-icon"></button>
     <nav class="nav--menu mobile-menu">
       <ul class="ul-list vertical-list">
-        <li class="list-item list-item-text"><a href="#works" class="link link-text">Portfolio</a></li>
-        <li class="list-item list-item-text"><a href="#contact" class="link link-text">Contact</a></li>
-        <li class="list-item list-item-text"><a href="#about-me" class="link link-text">About</a></li>
+        <li class="list-item list-item-text"><a href="#works" class="link link-text toggle">Portfolio</a></li>
+        <li class="list-item list-item-text"><a href="#contact" class="link link-text toggle">Contact</a></li>
+        <li class="list-item list-item-text"><a href="#about-me" class="link link-text toggle">About</a></li>
       </ul>
     </nav>
   </section>
