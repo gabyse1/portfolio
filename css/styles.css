@@ -69,8 +69,6 @@ a.link-icon {
 a.link-icon svg {
   width: 20px;
   height: 20px;
-  stroke: 0;
-  stroke-width: 0;
   stroke-linecap: round;
   stroke-linejoin: round;
   fill: rgba(255, 255, 255, 1);
@@ -148,9 +146,6 @@ h2.section-title {
   background-color: rgba(255, 255, 255, 1);
   border: 1px solid rgba(205, 77, 2, 1);
   color: rgba(205, 77, 2, 1);
-  /* background-color: rgba(255, 245, 225, 1); */
-  /* border: 1px solid rgba(245, 88, 0, 1); */
-  /* color: rgba(245, 88, 0, 1); */
 }
 
 .enable-button:active {
@@ -534,7 +529,6 @@ header {
   line-height: 1.5rem;
   display: flex;
   align-items: center;
-  /* color: rgba(151, 148, 147, 1); */
   color: rgba(100, 100, 147, 1);
   margin-bottom: 20px;
 }
