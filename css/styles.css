@@ -197,8 +197,12 @@ header.top-navigator {
   }
 }
 
-.nav--menu {
-  /* display: none; */
+#nav--menu {
+  display: none;
+}
+
+#contact-button {
+  display: none;
 }
 
 .nav--menu .link {
@@ -215,6 +219,14 @@ header.top-navigator {
   height: 24px;
   background-color: transparent;
   border: none;
+}
+
+#menu {
+  position: fixed;
+  background-color: rgba(60, 58, 57, 1);
+  height: 100vh;
+  width: 100%;
+  z-index: 30;
 }
 
 .menu-button .menu-icon,
@@ -589,6 +601,14 @@ footer .bottom-navigator {
   .works-section .posts-list {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+  }
+
+  #nav--menu {
+    display: flex;
+  }
+  
+  #contact-button {
+    display: block;
   }
 }
 

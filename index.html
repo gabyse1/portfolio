@@ -40,22 +40,31 @@
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <header class="top-navigator">
-    <a href="#" class="link link-icon logo">Gse</a>
-    <nav class="nav--menu">
+    <a href="#headline" class="link link-icon logo">Gse</a>
+    <nav id="nav--menu" class="nav--menu">
       <ul class="ul-list horizontal-list">
-        <li class="list-item list-item-text"><a href="#" class="link link-text">Portfolio</a></li>
-        <li class="list-item list-item-text"><a href="#" class="link link-text">Contact</a></li>
-        <li class="list-item list-item-text"><a href="#" class="link link-text">About</a></li>
+        <li class="list-item list-item-text"><a href="#works" class="link link-text">Portfolio</a></li>
+        <li class="list-item list-item-text"><a href="#contact" class="link link-text">Contact</a></li>
+        <li class="list-item list-item-text"><a href="#about-me" class="link link-text">About</a></li>
       </ul>
     </nav>
     <a href="#" id="contact-button" class="link link-icon"><img src="images/envelope-regular-icon.svg"
         alt="envelope icon" class="contact-icon"></a>
-    <button class="menu-button">
+    <button id="menu-button" class="menu-button">
       <img class="menu-icon" src="images/hamburger-icon.svg" alt="menu-icon">
       <img class="close-icon" src="images/close-icon.svg" alt="close icon">
     </button>
   </header>
-  <section class="page-section headline-section">
+  <section id="menu">
+    <nav class="nav--menu">
+      <ul class="ul-list vertical-list">
+        <li class="list-item list-item-text"><a href="#works" class="link link-text">Portfolio</a></li>
+        <li class="list-item list-item-text"><a href="#contact" class="link link-text">Contact</a></li>
+        <li class="list-item list-item-text"><a href="#about-me" class="link link-text">About</a></li>
+      </ul>
+    </nav>
+  </section>
+  <section id="headline" class="page-section headline-section">
     <h1 class="section-title title-l1">Hey There. <br> I'm Gaby</h1>
     <p class="section-subtitle subtitle-l1">I'm a Software Developer</p>
     <p class="description-text">I can help you build a product, feature or website Look through some of my work and
@@ -109,7 +118,7 @@
       </li>
     </ul>
   </section>
-  <section class="page-section works-section">
+  <section id="works" class="page-section works-section">
     <div class="box-join-title">
       <h2 class="section-title title-l1">My Recent Works</h2>
       <hr class="hr-bar">
@@ -232,7 +241,7 @@
       </div>
     </div>
   </section>
-  <section class="page-section aboutme-section">
+  <section id="about-me" class="page-section aboutme-section">
     <h2 class="section-title title-l1">About me</h2>
     <p class="description-text">Hello I’m a software developer! I can help you build a product , feature or website Look
       through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate
@@ -287,7 +296,7 @@
     </ul>
   </section>
   <footer>
-    <div class="page-section contact-section">
+    <div id="contact" class="page-section contact-section">
       <form class="contact-form" action="https://formspree.io/f/mzbopkyk" method="post">
         <p class="description-text">I'm always interested in hearing about new projects, so if you'd like to chat please
           get in touch.</p>
