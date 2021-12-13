@@ -66,7 +66,8 @@ a.link-icon {
   line-height: 1.5rem;
 }
 
-a.link-icon svg {
+a.link-icon svg,
+a.link-icon img {
   width: 20px;
   height: 20px;
   stroke-linecap: round;
@@ -160,17 +161,14 @@ h2.section-title {
   color: rgba(91, 89, 87, 1);
 }
 
-header {
+header.top-navigator {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
-}
-
-.top-navigator {
+  z-index: 10;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   background-color: rgba(62, 60, 60, 1);
   padding: 16px 24px;
@@ -179,6 +177,7 @@ header {
 .top-navigator .logo {
   font-weight: bold;
   color: rgba(255, 255, 255, 1);
+  margin-right: auto;
   animation: rotatelogo 2s ease;
 }
 
@@ -198,49 +197,39 @@ header {
   }
 }
 
-.top-navigator .menu-list {
+.nav--menu {
+  /* display: none; */
+}
+
+.nav--menu .link {
+  color: rgba(255, 245, 225, 1);
+  transition: transform 100ms ease;
+}
+
+#contact-button {
+  margin-left: 2rem;
+}
+
+.menu-button {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+}
+
+.menu-button .menu-icon,
+.menu-button .close-icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.menu-button .close-icon {
   display: none;
 }
 
-.top-navigator .menu-list .link {
-  color: rgba(255, 255, 255, 1);
-  transition: transform 0.3s ease-in-out;
-}
-
-.top-navigator .menu-icon {
-  width: 24px;
-  height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.top-navigator .icon-join {
-  width: 18px;
-  height: 12px;
-  position: relative;
-}
-
-.top-navigator .icon-join .bar {
-  width: 16px;
-  height: 2px;
-  background: rgba(255, 255, 255, 1);
-  border-radius: 18%;
+.menu-is-open {
   display: block;
-  position: absolute;
-  left: calc(50% - 16px / 2);
-}
-
-.top-navigator .icon-join .bar-1 {
-  top: 8.33%;
-}
-
-.top-navigator .icon-join .bar-2 {
-  top: calc(50% - 2px / 2);
-}
-
-.top-navigator .icon-join .bar-3 {
-  bottom: 8.33%;
 }
 
 .page-section {
@@ -578,8 +567,9 @@ footer .bottom-navigator {
   margin-bottom: 15px;
 }
 
-.top-navigator .menu-list .link:hover {
-  transform: scale(1.1);
+.top-navigator .nav--menu .link:hover {
+  color: rgba(255, 255, 255, 1);
+  transform: scale(1.05);
 }
 
 .headline-section .social-media-icons .link:hover {
@@ -636,11 +626,11 @@ footer .bottom-navigator {
     font-size: 1.875rem;
   }
 
-  .top-navigator .menu-list {
+  .top-navigator .nav--menu ul {
     display: flex;
   }
 
-  .top-navigator .menu-icon {
+  .top-navigator .menu-button {
     display: none;
   }
 
