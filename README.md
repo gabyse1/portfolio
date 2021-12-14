@@ -53,6 +53,13 @@ To get a local copy up and running follow these simple example steps.
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/gabriela-s%C3%A1nchez-espirilla-83011b225/)
 
 
+## Contributors
+
+👤 **Andrés Felipe Arroyave Naranjo**
+- GitHub: [@JohnFTitor](https://github.com/JohnFTitor)
+- Twitter: [@johnftitor](https://twitter.com/johnftitor)
+- LinkedIn: [Andres](https://www.linkedin.com/in/andresfelipe117/?locale=en_US)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
