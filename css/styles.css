@@ -375,6 +375,7 @@ header.top-navigator {
 .works-section .post-tags > * {
   margin: 5px;
   font-weight: 500;
+  border: 1px solid rgba(137, 147, 164, 1);
 }
 
 .works-section .post-tags li:first-child {
@@ -387,14 +388,6 @@ header.top-navigator {
 
 .works-section .posts-display > * {
   margin-bottom: 24px;
-}
-
-.posts-display .post-image {
-  width: 100%;
-  max-width: 430px;
-}
-
-.posts-display .post-information {
   color: rgba(9, 30, 66, 1);
 }
 
@@ -402,8 +395,9 @@ header.top-navigator {
   color: rgba(9, 30, 66, 1);
 }
 
-.posts-display .post-tags > * {
-  border: 1px solid rgba(137, 147, 164, 1);
+.posts-display .post-image {
+  width: 100%;
+  max-width: 430px;
 }
 
 .works-section .posts-list {
@@ -430,23 +424,24 @@ header.top-navigator {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Inter', sans-serif;
   position: absolute;
   left: 0;
   bottom: 0;
   z-index: 10;
 }
 
+.post-article .description-text {
+  font-family: 'Inter', sans-serif;
+}
+
 .post-article .post-information {
-  color: rgba(255, 255, 255, 1);
   padding: 8px 16px;
 }
 
-.post-article .description-text {
-  font-family: 'Inter', sans-serif;
-  color: rgba(255, 255, 255, 1);
-}
-
 .post-article .post-tags > * {
+  border: 0;
   background-color: rgba(255, 255, 225, 0.24);
 }
 
