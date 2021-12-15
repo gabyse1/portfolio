@@ -337,10 +337,6 @@ header.top-navigator {
   overflow: hidden;
 }
 
-.works-section .desktop-item {
-  display: none;
-}
-
 .works-section .post-image img {
   width: 100%;
   height: auto;
@@ -364,6 +360,10 @@ header.top-navigator {
   line-height: 2.75rem;
   display: flex;
   align-items: center;
+}
+
+.works-section .desktop-item {
+  display: none;
 }
 
 .works-section .description-text {

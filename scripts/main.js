@@ -52,12 +52,12 @@ const titles = ['Data Dashboard Healthcare', 'Website Portfolio', 'Profesional A
 
 let index = 2;
 
-while (idCount <= 5) {
+while (idCount <= 6) {
   if (index > 4) {
     index = 2;
   }
-  const other = createCard('images/img-placeholder-articles.png', `images/img-placeholder-articles-0${index}`, 'Profesional Art Printing Data',
-    `${titles[index]}`,
+  const other = createCard('images/img-placeholder-articles.png', `images/img-placeholder-articles-0${index}.png`, 'Profesional Art Printing Data',
+    `${titles[index - 2]}`,
     `A daily selection of privately personalized reads; no accounts or sign-ups required. 
   has been the industry's standard`, `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
@@ -99,25 +99,53 @@ function render() {
     // card information content
     const info = document.createElement('div');
     info.classList.add('post-information');
-    const infoContent = ``;
+    const infoContent = ` <p class="post-title mobile-item">${cardobject.title}</p>
+                          <p class="post-title desktop-item">${cardobject.titleDesktop}</p>
+                           <p class="post-description description-text"> ${cardobject.shortDescription} </p>`;
+    info.innerHTML = infoContent;
 
+    const tags = document.createElement('ul');
+    tags.classList.add('post-tags' , 'ul-list', 'horizontal-list');
+    cardobject.tags.forEach( tag => {
+      const litag = document.createElement('li');
+      litag.classList.add('list-item-text');
+      litag.textContent = tag;
+      tags.appendChild(litag);
+    })
+    info.appendChild(tags);
+
+    const seeProject = document.createElement('button');
+    seeProject.classList.add('enable-button', 'post-button');
+    seeProject.setAttribute('type', 'button');
+    seeProject.setAttribute('name', 'button');
+    seeProject.textContent = 'See Project';
 
     if (cardobject.id == 'card-1') {
       display.appendChild(figure);
-    }
-    else {
+      display.appendChild(info);
+      info.appendChild(seeProject);
+    } else {
       const card = document.createElement('article');
       card.classList.add('post-article');
+      
+      list.appendChild(card);
+      card.appendChild(figure);
+      
+      const postcaption = document.createElement('figcaption');
+      postcaption.classList.add('post-caption');
+      postcaption.appendChild(info);
+      card.appendChild(postcaption);
+      postcaption.appendChild(seeProject);
+
+      seeProject.classList.add('mobile-item');
+      
       if (cardobject.id === 'special') {
         card.classList.add('active-article');
         info.classList.add('mobile-item');
+        seeProject.classList.remove('mobile-item');
       }
-      list.appendChild(card);
-      card.appendChild(figure);
-
-      const postcaption = document.createElement('figcaption');
-      postcaption.classList.add('post-caption');
-
     }
   })
 }
+
+render();
