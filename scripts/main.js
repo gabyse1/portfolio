@@ -105,8 +105,8 @@ function render() {
     info.innerHTML = infoContent;
 
     const tags = document.createElement('ul');
-    tags.classList.add('post-tags' , 'ul-list', 'horizontal-list');
-    cardobject.tags.forEach( tag => {
+    tags.classList.add('post-tags', 'ul-list', 'horizontal-list');
+    cardobject.tags.forEach(tag => {
       const litag = document.createElement('li');
       litag.classList.add('list-item-text');
       litag.textContent = tag;
@@ -120,6 +120,10 @@ function render() {
     seeProject.setAttribute('name', 'button');
     seeProject.textContent = 'See Project';
 
+    seeProject.addEventListener('click', () => {
+      popUp(cardobject);
+    });
+
     if (cardobject.id == 'card-1') {
       display.appendChild(figure);
       display.appendChild(info);
@@ -127,10 +131,10 @@ function render() {
     } else {
       const card = document.createElement('article');
       card.classList.add('post-article');
-      
+
       list.appendChild(card);
       card.appendChild(figure);
-      
+
       const postcaption = document.createElement('figcaption');
       postcaption.classList.add('post-caption');
       postcaption.appendChild(info);
@@ -138,7 +142,7 @@ function render() {
       postcaption.appendChild(seeProject);
 
       seeProject.classList.add('mobile-item');
-      
+
       if (cardobject.id === 'special') {
         card.classList.add('active-article');
         info.classList.add('mobile-item');
@@ -148,10 +152,40 @@ function render() {
   })
 }
 const works = document.querySelector('#works');
-function popUp (cardobject) {
+
+function popUp(cardobject) {
   const popUpBox = document.createElement('div');
   popUpBox.classList.add('popup-box');
-  works.appendChild(popUpBox); 
+  works.appendChild(popUpBox);
+
+  const popUpContent = `<div class="popup-container posts-display">
+    <div class="popup-header">
+      <p class="post-title mobile-item">${cardobject.title}</p>
+      <p class="post-title desktop-item">${cardobject.titleDesktop}</p>
+    </div>
+    <ul class="post-tags ul-list horizontal-list">
+      ${listItemsGenerator(cardobject.tags)}
+    </ul>
+    <figure class="post-image">
+      <img class="mobile-item" src=${cardobject.imageMobile} alt="card image">
+      <img class="desktop-item" src=${cardobject.imageDesktop} alt="card image">
+    </figure>
+    <div class="popup-info">
+      <p class="post-description description-text">${cardobject.longDescription}</p>
+      <div class="popup-buttons">
+      </div>
+    </div>
+  </div>`;
+
+  popUpBox.innerHTML = popUpContent;
+
+  function listItemsGenerator(arr) {
+    let listItems = '';
+    arr.forEach((tag) => {
+      listItems += `<li class="list-item-text">${tag}</li>`;
+    });
+    return listItems;
+  }
 }
 
 render();
