@@ -67,3 +67,19 @@ while (idCount <= 5) {
   cards.push(other);
   index += 1;
 }
+
+const container = document.querySelector('.works-container');
+
+function render () {
+  cards.forEach( cardobject =>  {
+    if (cardobject.id == 'card-1') {
+      const Display = document.createElement('div');
+      Display.classList.add('posts-display');
+      container.appendChild(Display);
+    }
+    else {
+      const list = document.createElement('div');
+      list.classList.add();
+    }
+  })
+}
