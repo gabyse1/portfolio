@@ -449,6 +449,64 @@ header.top-navigator {
   width: 100%;
 }
 
+/* --- WORKS POPUP WINDOW --- */
+
+.works-section .popup-box {
+  height: 100vh;
+  margin: 0;
+  padding: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 110;
+  background-color: black;
+}
+
+.popup-box .popup-container {
+  width: 100%;
+  max-height: calc(100vh - 6%);
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 1);
+  overflow-y: auto;
+}
+
+.popup-box .close-button-popup {
+  margin: 0;
+}
+
+.popup-box .popup-header,
+.popup-box .popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-box .popup-buttons {
+  justify-content: flex-start;
+  margin-top: 1.5em;
+}
+
+.popup-box .popup-buttons img {
+  margin-left: 1em;
+}
+
+.popup-box .popup-buttons > *:first-child {
+  margin-right: 1em;
+}
+
+.popup-box .popup-info {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* --- ABOUT ME --- */
+
 .aboutme-section {
   background: rgba(28, 26, 25, 1);
   background-image: url(../images/illustration-aboutme-mobile.svg);
@@ -752,6 +810,30 @@ footer .bottom-navigator {
   .post-article.active-article {
     outline: 1px solid rgba(38, 38, 38, 1);
   }
+
+/* --- WORKS POPUP WINDOW --- */
+
+.popup-box .popup-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.popup-container .popup-header,
+.popup-container .post-tags {
+  margin-bottom: 1em;
+  grid-column: 1 / 3;
+}
+
+.popup-container .popup-buttons {
+  grid-column: 2 / 3;
+}
+
+.popup-container .post-image {
+  width: 100%;
+  grid-column: 1 / 2;
+}
+
+/* --- ABOUT ME --- */
 
   .aboutme-section {
     background-image: url(../images/illustration-aboutme.svg);
