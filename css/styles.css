@@ -462,7 +462,7 @@ header.top-navigator {
   top: 0;
   left: 0;
   z-index: 110;
-  background-color: black;
+  backdrop-filter: blur(2px);
 }
 
 .popup-box .popup-container {

@@ -147,5 +147,11 @@ function render() {
     }
   })
 }
+const works = document.querySelector('#works');
+function popUp (cardobject) {
+  const popUpBox = document.createElement('div');
+  popUpBox.classList.add('popup-box');
+  works.appendChild(popUpBox); 
+}
 
 render();
