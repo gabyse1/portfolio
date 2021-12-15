@@ -8,7 +8,7 @@ toggleButtons.forEach((button) => {
   button.addEventListener('click', toggleMenu);
 });
 
-let cards = [];
+const cards = [];
 let idCount = 0;
 
 function createCard(imageMobile, imageDesktop, title, titleDesktop, shortDescription,
@@ -69,6 +69,56 @@ while (idCount <= 6) {
 }
 
 const container = document.querySelector('.works-container');
+const works = document.querySelector('#works');
+
+function popUp(cardobject) {
+  function listItemsGenerator(arr) {
+    let listItems = '';
+    arr.forEach((tag) => {
+      listItems += `<li class="list-item-text">${tag}</li>`;
+    });
+    return listItems;
+  }
+
+  const popUpBox = document.createElement('div');
+  popUpBox.classList.add('popup-box');
+  works.appendChild(popUpBox);
+
+  const popUpContent = `<div class="popup-container posts-display">
+    <div class="popup-header">
+      <p class="post-title mobile-item">${cardobject.title}</p>
+      <p class="post-title desktop-item">${cardobject.titleDesktop}</p>
+      <button type="button" id="close-button-popup" class="close-button close-button-popup">
+        <img src="images/close-icon.svg" alt="close icon" class="close-icon">
+      </button>
+    </div>
+    <ul class="post-tags ul-list horizontal-list">
+      ${listItemsGenerator(cardobject.tags)}
+    </ul>
+    <figure class="post-image">
+      <img class="mobile-item" src=${cardobject.imageMobile} alt="card image">
+      <img class="desktop-item" src=${cardobject.imageDesktop} alt="card image">
+    </figure>
+    <div class="popup-info">
+      <p class="post-description description-text">${cardobject.longDescription}</p>
+      <div class="popup-buttons">
+        <a rel="noopener noreferrer" href= ${cardobject.linkLive} aria-label="See live" target="_blank" class="enable-button post-button">See Live
+          <img src="images/see-live-icon.svg" alt="close icon" class="close-icon">
+        </a>
+        <a rel="noopener noreferrer" href= ${cardobject.linkSource} aria-label="See Source" target="_blank" class="enable-button post-button">See Source
+          <img src="images/see-source-icon.svg" alt="close icon" class="close-icon">
+        </a>
+      </div>
+    </div>
+  </div>`;
+
+  popUpBox.innerHTML = popUpContent;
+
+  const closeButton = document.querySelector('#close-button-popup');
+  closeButton.addEventListener('click', () => {
+    works.removeChild(popUpBox);
+  });
+}
 
 function render() {
   const display = document.createElement('div');
@@ -79,8 +129,7 @@ function render() {
   list.classList.add('posts-list');
   container.appendChild(list);
 
-  cards.forEach(cardobject => {
-
+  cards.forEach((cardobject) => {
     const figure = document.createElement('figure');
     figure.classList.add('post-image');
 
@@ -106,12 +155,12 @@ function render() {
 
     const tags = document.createElement('ul');
     tags.classList.add('post-tags', 'ul-list', 'horizontal-list');
-    cardobject.tags.forEach(tag => {
+    cardobject.tags.forEach((tag) => {
       const litag = document.createElement('li');
       litag.classList.add('list-item-text');
       litag.textContent = tag;
       tags.appendChild(litag);
-    })
+    });
     info.appendChild(tags);
 
     const seeProject = document.createElement('button');
@@ -124,7 +173,7 @@ function render() {
       popUp(cardobject);
     });
 
-    if (cardobject.id == 'card-1') {
+    if (cardobject.id === 'card-1') {
       display.appendChild(figure);
       display.appendChild(info);
       info.appendChild(seeProject);
@@ -149,43 +198,7 @@ function render() {
         seeProject.classList.remove('mobile-item');
       }
     }
-  })
-}
-const works = document.querySelector('#works');
-
-function popUp(cardobject) {
-  const popUpBox = document.createElement('div');
-  popUpBox.classList.add('popup-box');
-  works.appendChild(popUpBox);
-
-  const popUpContent = `<div class="popup-container posts-display">
-    <div class="popup-header">
-      <p class="post-title mobile-item">${cardobject.title}</p>
-      <p class="post-title desktop-item">${cardobject.titleDesktop}</p>
-    </div>
-    <ul class="post-tags ul-list horizontal-list">
-      ${listItemsGenerator(cardobject.tags)}
-    </ul>
-    <figure class="post-image">
-      <img class="mobile-item" src=${cardobject.imageMobile} alt="card image">
-      <img class="desktop-item" src=${cardobject.imageDesktop} alt="card image">
-    </figure>
-    <div class="popup-info">
-      <p class="post-description description-text">${cardobject.longDescription}</p>
-      <div class="popup-buttons">
-      </div>
-    </div>
-  </div>`;
-
-  popUpBox.innerHTML = popUpContent;
-
-  function listItemsGenerator(arr) {
-    let listItems = '';
-    arr.forEach((tag) => {
-      listItems += `<li class="list-item-text">${tag}</li>`;
-    });
-    return listItems;
-  }
+  });
 }
 
 render();
