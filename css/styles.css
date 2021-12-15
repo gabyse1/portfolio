@@ -165,7 +165,7 @@ header.top-navigator {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 100;
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -224,7 +224,7 @@ header.top-navigator {
   background-color: rgba(60, 58, 57, 1);
   height: 100vh;
   width: 100%;
-  z-index: 30;
+  z-index: 110;
 }
 
 .menu-button .menu-icon,
@@ -337,7 +337,7 @@ header.top-navigator {
   overflow: hidden;
 }
 
-.works-section .post-image-desktop {
+.works-section .desktop-item {
   display: none;
 }
 
@@ -416,13 +416,24 @@ header.top-navigator {
 .posts-list .post-article {
   max-width: 327px;
   height: auto;
-  background-image: url(../images/img-placeholder-articles.png);
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-start;
   margin: 1em auto;
+  position: relative;
+}
+
+.post-article .post-caption {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
 }
 
 .post-article .post-information {
@@ -628,6 +639,10 @@ footer .bottom-navigator {
   #contact-button {
     display: block;
   }
+
+  .menu-button {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -666,10 +681,6 @@ footer .bottom-navigator {
 
   .top-navigator .nav--menu ul {
     display: flex;
-  }
-
-  .top-navigator .menu-button {
-    display: none;
   }
 
   .page-section {
@@ -727,38 +738,24 @@ footer .bottom-navigator {
 
   .posts-list .post-article {
     outline: 1px solid rgba(255, 255, 255, 1);
-    position: relative;
     transition: outline 0.5s ease, transform 0.5s ease;
   }
 
   .posts-list .post-article:hover {
     outline: 1px solid rgba(137, 147, 164, 1);
     transform: scale(1.03);
-    z-index: 20;
   }
 
-  .post-article .post-image-desktop {
-    display: flex;
-  }
-
-  .post-article .post-information,
-  .post-article .post-button {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 10;
-  }
-
-  .post-article .post-button {
+  .post-article .mobile-item {
     display: none;
   }
 
-  .active-article .post-information {
-    display: none;
+  .post-article .desktop-item {
+    display: flex;
   }
 
-  .active-article .post-button {
-    display: flex;
+  .post-article.active-article {
+    outline: 1px solid rgba(38, 38, 38, 1);
   }
 
   .aboutme-section {
