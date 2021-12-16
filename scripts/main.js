@@ -207,14 +207,43 @@ const emailv = document.querySelector('#email');
 const inputName = document.querySelector('#inputName');
 const inputMessage = document.querySelector('#inputMessage');
 let localFormData = {
-  'inputName' : '',
-  'email' : '',
-  'inputMessage': ''
+  'name': '',
+  'email': '',
+  'message': ''
 }
 
-function populateStorage(){
-  localStorage.setItem('formData', JSON.stringify(localFormData));
+function setDataForm() {
+  localFormData = JSON.parse(localStorage.getItem('formData'));
 }
+
+function populateStorage() {
+  localStorage.setItem('formData', JSON.stringify(localFormData));
+  setDataForm();
+}
+
+if (!localStorage.getItem('formData')) {
+  populateStorage();
+} else {
+  setDataForm();
+}
+
+inputName.addEventListener('input', () => {
+  localFormData.name = inputName.value;
+  populateStorage();
+});
+
+emailv.addEventListener('input', () => {
+  errorSpan.textContent = '';
+  errorSpan.classList.remove('visible');
+  emailv.classList.remove('field-error');
+  localFormData.email = emailv.value;
+  populateStorage();
+});
+
+inputMessage.addEventListener('input', () => {
+  localFormData.message = inputMessage.value;
+  populateStorage();
+});
 
 contactForm.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -226,12 +255,6 @@ contactForm.addEventListener('submit', (event) => {
   } else {
     contactForm.submit();
   }
-});
-
-emailv.addEventListener('input', () => {
-  errorSpan.textContent = '';
-  errorSpan.classList.remove('visible');
-  emailv.classList.remove('field-error');
 });
 
 // Create work cards automatically
