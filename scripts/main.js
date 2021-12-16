@@ -201,4 +201,25 @@ function render() {
   });
 }
 
+const contactForm = document.querySelector('#contact-form');
+const errorSpan = document.querySelector('.error');
+const emailv = document.querySelector('#email');
+
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  if (emailv.value.trim().match(/[A-Z]/g)) {
+    errorSpan.textContent = 'Email field should not have capital letters.';
+    emailv.classList.add('field-error');
+  } else {
+    contactForm.submit();
+  }
+});
+
+emailv.addEventListener('input', () => {
+  errorSpan.textContent = '';
+  emailv.classList.remove('field-error');
+});
+
+// Create work cards automatically
 render();
