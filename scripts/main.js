@@ -210,6 +210,7 @@ contactForm.addEventListener('submit', (event) => {
 
   if (emailv.value.trim().match(/[A-Z]/g)) {
     errorSpan.textContent = 'Email field should not have capital letters.';
+    errorSpan.classList.add('visible');
     emailv.classList.add('field-error');
   } else {
     contactForm.submit();
@@ -218,6 +219,7 @@ contactForm.addEventListener('submit', (event) => {
 
 emailv.addEventListener('input', () => {
   errorSpan.textContent = '';
+  errorSpan.classList.remove('visible');
   emailv.classList.remove('field-error');
 });
 

@@ -694,11 +694,16 @@ footer .bottom-navigator {
 }
 
 .error {
+  display: none;
   color: rgba(153, 0, 0, 1);
   background-color: rgba(255, 221, 221, 1);
   border-radius: 5px;
   padding: 0.3em;
   margin-top: 1em;
+}
+
+.visible {
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
