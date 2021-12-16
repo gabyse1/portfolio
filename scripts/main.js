@@ -205,14 +205,20 @@ const contactForm = document.querySelector('#contact-form');
 const errorSpan = document.querySelector('.error');
 const emailv = document.querySelector('#email');
 
-contactForm.addEventListener('submit', (event) => {
-  event.preventDefault();
-
+function validateEmail() {
   if (emailv.value.trim().match(/[A-Z]/g)) {
     errorSpan.textContent = 'Email field should not have capital letters.';
     errorSpan.classList.add('visible');
     emailv.classList.add('field-error');
-  } else {
+    return false;
+  }
+  return true;
+}
+
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  if (validateEmail()) {
     contactForm.submit();
   }
 });
