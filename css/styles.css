@@ -632,7 +632,7 @@ footer .bottom-navigator {
 .works-section .popup-box {
   height: 100vh;
   margin: 0;
-  padding: 6%;
+  padding: 2em;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -640,12 +640,12 @@ footer .bottom-navigator {
   top: 0;
   left: 0;
   z-index: 110;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(6px);
 }
 
 .popup-box .popup-container {
   width: 100%;
-  max-height: calc(100vh - 6%);
+  height: calc(100vh - 4em);
   padding: 1em;
   background-color: rgba(255, 255, 255, 1);
   overflow-y: auto;
@@ -667,6 +667,10 @@ footer .bottom-navigator {
   margin-top: 1.5em;
 }
 
+.popup-box .popup-buttons a {
+  text-decoration: none;
+}
+
 .popup-box .popup-buttons img {
   margin-left: 1em;
 }
@@ -676,11 +680,10 @@ footer .bottom-navigator {
 }
 
 .popup-box .popup-info {
-  height: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 @media screen and (min-width: 768px) {
@@ -819,7 +822,7 @@ footer .bottom-navigator {
 
   .popup-box .popup-container {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.3fr 1fr;
     grid-template-rows: auto auto 60vh;
   }
 
@@ -835,7 +838,14 @@ footer .bottom-navigator {
 
   .popup-container .post-image {
     width: 100%;
+    height: 100%;
     grid-column: 1 / 2;
+  }
+
+  .popup-container .popup-info {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
   }
 
   /* --- ABOUT ME --- */
