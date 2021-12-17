@@ -207,10 +207,10 @@ const emailv = document.querySelector('#email');
 const inputName = document.querySelector('#inputName');
 const inputMessage = document.querySelector('#inputMessage');
 let localFormData = {
-  'name': '',
-  'email': '',
-  'message': ''
-}
+  name: '',
+  email: '',
+  message: '',
+};
 
 function setDataForm() {
   localFormData = JSON.parse(localStorage.getItem('formData'));
