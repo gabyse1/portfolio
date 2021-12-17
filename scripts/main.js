@@ -204,17 +204,6 @@ function render() {
 const contactForm = document.querySelector('#contact-form');
 const errorSpan = document.querySelector('.error');
 const emailv = document.querySelector('#email');
-const inputName = document.querySelector('#inputName');
-const inputMessage = document.querySelector('#inputMessage');
-let localFormData = {
-  'inputName' : '',
-  'email' : '',
-  'inputMessage': ''
-}
-
-function populateStorage(){
-  localStorage.setItem('formData', JSON.stringify(localFormData));
-}
 
 function validateEmail() {
   if (emailv.value.trim().match(/[A-Z]/g)) {
