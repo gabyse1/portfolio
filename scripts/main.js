@@ -201,4 +201,33 @@ function render() {
   });
 }
 
+const contactForm = document.querySelector('#contact-form');
+const errorSpan = document.querySelector('.error');
+const emailv = document.querySelector('#email');
+
+function validateEmail() {
+  if (emailv.value.trim().match(/[A-Z]/g)) {
+    errorSpan.textContent = 'Email field should not have capital letters.';
+    errorSpan.classList.add('visible');
+    emailv.classList.add('field-error');
+    return false;
+  }
+  return true;
+}
+
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  if (validateEmail()) {
+    contactForm.submit();
+  }
+});
+
+emailv.addEventListener('input', () => {
+  errorSpan.textContent = '';
+  errorSpan.classList.remove('visible');
+  emailv.classList.remove('field-error');
+});
+
+// Create work cards automatically
 render();
