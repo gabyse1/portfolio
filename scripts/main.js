@@ -214,6 +214,9 @@ let localFormData = {
 
 function setDataForm() {
   localFormData = JSON.parse(localStorage.getItem('formData'));
+  inputName.value = localFormData.name;
+  emailv.value = localFormData.email;
+  inputMessage.value = localFormData.message;
 }
 
 function populateStorage() {
