@@ -1,23 +1,23 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Repo-Gabriela-Portafolio
+# Portafolio
 
-> This repository contents the portafolio project.
+> This is the portafolio project. It is built with basic knowledge of HTML, CSS, and Javascript.
 
 ![mobile screenshot](./app-screenshot-mobile.png)
 
 ![desktop screenshot](./app-screenshot-desktop.png)
 
-This project will be a website to show the software developer presentation like skills and all their software projects.
+This website display the software developer presentation like skills and software projects.
 
 
 ## Built With
 
-- HTML
-- CSS
+- HTML/CSS
+- Javascript
 
 
-## Location
+## Live demo
 
 Website link: https://gabyse1.github.io/repo-portfolio/
 
@@ -48,9 +48,9 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Gabriela Sánchez**
 
-- GitHub: [@githubhandle](https://github.com/gabyse1)
-- Twitter: [@twitterhandle](https://twitter.com/gabyse0)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/gabriela-s%C3%A1nchez-espirilla-83011b225/)
+- GitHub: [@gabyse1](https://github.com/gabyse1)
+- Twitter: [@gabyse0](https://twitter.com/gabyse0)
+- LinkedIn: [Gabriela](https://www.linkedin.com/in/gabriela-s%C3%A1nchez-espirilla-83011b225/)
 
 
 ## Contributors
@@ -59,6 +59,9 @@ To get a local copy up and running follow these simple example steps.
 - GitHub: [@JohnFTitor](https://github.com/JohnFTitor)
 - Twitter: [@johnftitor](https://twitter.com/johnftitor)
 - LinkedIn: [Andres](https://www.linkedin.com/in/andresfelipe117/?locale=en_US)
+
+👤 **Oyelakin Ridwan**
+- GitHub: [@oyelakinG9](https://github.com/JohnFTitor)
 
 ## 🤝 Contributing
 
