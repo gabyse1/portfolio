@@ -8,65 +8,78 @@ toggleButtons.forEach((button) => {
   button.addEventListener('click', toggleMenu);
 });
 
-const cards = [];
-let idCount = 0;
-
-function createCard(imageMobile, imageDesktop, title, titleDesktop, shortDescription,
-  longDescription, tags, linkLive, linkSource) {
-  idCount += 1;
-  return {
-    id: `card-${idCount}`,
-    imageMobile,
-    imageDesktop,
-    title,
-    titleDesktop,
-    shortDescription,
-    longDescription,
-    tags,
-    linkLive,
-    linkSource,
-  };
-}
-
-const postsDisplay = createCard('images/img-placeholder-display.png', 'images/img-placeholder-display.png', 'Multi-Post Stories',
-  'Multi-Post Stories', `A daily selection of privately personalized reads; no accounts or sign-ups required. 
-has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
-took a standar dummy text.`, `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-but also the leap into electronic typesetting, remaining essent`, ['css', 'html', 'bootstrap', 'Ruby'],
-  'https://gabyse1.github.io/repo-portfolio', 'https://github.com/gabyse1/repo-portfolio');
-cards.push(postsDisplay);
-
-const special = createCard('images/img-placeholder-articles.png', 'images/img-placeholder-articles-01.png', 'Profesional Art Printing Data',
-  'Profesional Art Printing Data', `A daily selection of privately personalized reads; no accounts or sign-ups required. 
-has been the industry's standard`, `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-but also the leap into electronic typesetting, remaining essent`, ['html', 'bootstrap', 'Ruby'],
-  'https://gabyse1.github.io/repo-portfolio', 'https://github.com/gabyse1/repo-portfolio');
-special.id = 'special';
-cards.push(special);
-
-const titles = ['Data Dashboard Healthcare', 'Website Portfolio', 'Profesional Art Printing Data'];
-
-let index = 2;
-
-while (idCount <= 6) {
-  if (index > 4) {
-    index = 2;
-  }
-  const other = createCard('images/img-placeholder-articles.png', `images/img-placeholder-articles-0${index}.png`, 'Profesional Art Printing Data',
-    `${titles[index - 2]}`,
-    `A daily selection of privately personalized reads; no accounts or sign-ups required. 
-  has been the industry's standard`, `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
- Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
- took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
- but also the leap into electronic typesetting, remaining essent`, ['html', 'bootstrap', 'Ruby'],
-    'https://gabyse1.github.io/repo-portfolio', 'https://github.com/gabyse1/repo-portfolio');
-  cards.push(other);
-  index += 1;
-}
+const cards = [
+  {
+    id: 1,
+    imageDesktop: 'images/img-rent-a-movie.png',
+    title: 'Rent a Movie',
+    shortDescription: `A website that allows the user to rent movies, make reservations, leave likes, 
+    and make comments about them.`,
+    longDescription: `A website that allows the user to rent movies, make reservations, leave likes, 
+    and make comments about them. An entertaining space to share opinions, and a very useful way to make 
+    reservations from anywhere you are without worrying as before due to the closing hours of the movie .`,
+    tags: ['JavaScript', 'HTML', 'SCSS', 'Webpack'],
+    linkLive: 'https://zhadier.github.io/Rent-A-Movie/',
+    linkSource: 'https://github.com/zhadier/Rent-A-Movie',
+  },
+  {
+    id: 2,
+    imageDesktop: 'images/img-math-magicians.png',
+    title: 'Math Magicians',
+    shortDescription: `This Single Page App (SPA) allows users to make simple math calculations and read 
+    random math-related quotes. Ideal for math lovers.`,
+    longDescription: `This Single Page App (SPA) allows users to make simple math calculations and read 
+    random math-related quotes.`,
+    tags: ['React', 'JavaScript', 'SCSS', 'Webpack'],
+    linkLive: 'https://gabyse1.github.io/math-magicians/',
+    linkSource: 'https://github.com/gabyse1/math-magicians',
+  },
+  {
+    id: 3,
+    imageDesktop: 'images/img-leaderboard.png',
+    title: 'Leaderboard',
+    shortDescription: 'This minimalistic design website displays scores submitted by different players.',
+    longDescription: `This minimalistic design website displays scores submitted by different players. 
+    The user can also create more than a game and submit his scores in all of them.`,
+    tags: ['JavaScript', 'HTML', 'SCSS', 'Webpack'],
+    linkLive: 'https://gabyse1.github.io/leaderboard/dist/',
+    linkSource: 'https://github.com/gabyse1/leaderboard',
+  },
+  {
+    id: 4,
+    imageDesktop: 'images/img-todo-list.png',
+    title: 'Todo List',
+    shortDescription: `A tool that helps to organize your day. It simply lists the things that you need 
+    to do and allows you to mark them as complete. `,
+    longDescription: `A tool that helps to organize your day. It simply lists the things that you need 
+    to do and allows you to mark them as complete. `,
+    tags: ['JavaScript', 'HTML', 'SCSS', 'Webpack'],
+    linkLive: 'https://gabyse1.github.io/to-do-list/dist/',
+    linkSource: 'https://github.com/gabyse1/to-do-list',
+  },
+  {
+    id: 5,
+    imageDesktop: 'images/img-awesome-books.png',
+    title: 'Awesome Books',
+    shortDescription: 'A simple website that displays a list of books and allows you to add and remove books from that list.',
+    longDescription: 'A simple website that displays a list of books and allows you to add and remove books from that list.',
+    tags: ['JavaScript', 'HTML', 'SCSS', 'Webpack'],
+    linkLive: 'https://gabyse1.github.io/awesome-books/dist/',
+    linkSource: 'https://github.com/gabyse1/awesome-books',
+  },
+  {
+    id: 6,
+    imageDesktop: 'images/img-environment-action.png',
+    title: 'Environment Action',
+    shortDescription: `Website to publicize the early arrival of a new edition of the conference and exhibition 
+    that Environment Action organizes every two years.`,
+    longDescription: `Website to publicize the early arrival of a new edition of the conference and exhibition 
+    that Environment Action organizes every two years.`,
+    tags: ['JavaScript', 'HTML', 'SCSS'],
+    linkLive: 'https://gabyse1.github.io/repo-capston-project-01/',
+    linkSource: 'https://github.com/gabyse1/repo-capston-project-01',
+  },
+];
 
 const container = document.querySelector('.works-container');
 const works = document.querySelector('#works');
@@ -96,7 +109,7 @@ function popUp(cardobject) {
       ${listItemsGenerator(cardobject.tags)}
     </ul>
     <figure class="post-image">
-      <img class="mobile-item" src=${cardobject.imageMobile} alt="card image">
+      <img class="mobile-item" src=${cardobject.imageDesktop} alt="card image">
       <img class="desktop-item" src=${cardobject.imageDesktop} alt="card image">
     </figure>
     <div class="popup-info">
@@ -135,7 +148,7 @@ function render() {
 
     const mobImg = document.createElement('img');
     mobImg.classList.add('mobile-item');
-    mobImg.setAttribute('src', cardobject.imageMobile);
+    mobImg.setAttribute('src', cardobject.imageDesktop);
     mobImg.setAttribute('alt', 'card image');
     figure.appendChild(mobImg);
 
@@ -149,8 +162,8 @@ function render() {
     const info = document.createElement('div');
     info.classList.add('post-information');
     const infoContent = ` <p class="post-title mobile-item">${cardobject.title}</p>
-                          <p class="post-title desktop-item">${cardobject.titleDesktop}</p>
-                           <p class="post-description description-text"> ${cardobject.shortDescription} </p>`;
+                          <p class="post-title desktop-item">${cardobject.title}</p>
+                          <p class="post-description description-text"> ${cardobject.shortDescription} </p>`;
     info.innerHTML = infoContent;
 
     const tags = document.createElement('ul');
@@ -173,7 +186,7 @@ function render() {
       popUp(cardobject);
     });
 
-    if (cardobject.id === 'card-1') {
+    if (cardobject.id === 1) {
       display.appendChild(figure);
       display.appendChild(info);
       info.appendChild(seeProject);
@@ -189,14 +202,6 @@ function render() {
       postcaption.appendChild(info);
       card.appendChild(postcaption);
       postcaption.appendChild(seeProject);
-
-      seeProject.classList.add('mobile-item');
-
-      if (cardobject.id === 'special') {
-        card.classList.add('active-article');
-        info.classList.add('mobile-item');
-        seeProject.classList.remove('mobile-item');
-      }
     }
   });
 }
