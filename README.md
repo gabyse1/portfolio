@@ -2,13 +2,12 @@
 
 # Portafolio
 
-> This is the portafolio project. It is built with basic knowledge of HTML, CSS, and Javascript.
+> The portfolio displays the software developer presentation like skills, software projects, and a contact form.
 
-![mobile screenshot](./app-screenshot-mobile.png)
 
 ![desktop screenshot](./app-screenshot-desktop.png)
 
-This website display the software developer presentation like skills and software projects.
+![mobile screenshot](./app-screenshot-mobile.png)
 
 
 ## Built With
@@ -19,7 +18,7 @@ This website display the software developer presentation like skills and softwar
 
 ## Live demo
 
-Website link: https://gabyse1.github.io/repo-portfolio/
+Website link: https://gabyse1.github.io/portfolio/
 
 
 ## Getting Started
