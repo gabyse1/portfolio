@@ -12,8 +12,8 @@
 
 ## Built With
 
-- HTML/CSS
 - Javascript
+- HTML/CSS
 
 
 ## Live demo
@@ -23,24 +23,20 @@
 
 ## Getting Started
 
+
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-- Have a computer
+- Have `git` installed on your local computer.
 
 ### Install
 
-- Install git on your local computer.
 - Clone this repository to your local computer. Choose the location you prefer.
 
 ### Usage
 
-- This project display a basic mobile and desktop skeleton of a portafolio.
-
-### Deployment
-
-- Execute the index.html file to display the project.
+- Execute the `index.html` file to open it in a browser.
 
 
 ## Authors

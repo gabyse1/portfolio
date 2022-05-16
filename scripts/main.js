@@ -11,6 +11,47 @@ toggleButtons.forEach((button) => {
 const cards = [
   {
     id: 1,
+    imageDesktop: 'images/img-air-pollution.png',
+    title: 'Air Pollution',
+    shortDescription: `Offers users information on the Air Quality Index (AQI) of the world's cities 
+    and the detailed measurement of each polluting substance used to measure said AQI.`,
+    longDescription: `Air pollution app offers users information on the Air Quality Index (AQI) of the world's 
+    cities using the international standar colors and indexes. The detailed measurement of each polluting substance 
+    used to measure said AQI. City location information. The forecast of air pollution for the next 24 hours.
+    The forecast of air pollution for the next 5 days. A table with the measurement of each polluting substance.
+    Users can search the AQI by entering the city name.`,
+    tags: ['JavaScript', 'React', 'Redux', 'SCSS'],
+    linkLive: 'https://airpollutiongaby.herokuapp.com/',
+    linkSource: 'https://github.com/gabyse1/air-pollution',
+  },
+  {
+    id: 2,
+    imageDesktop: 'images/img-bookstore.png',
+    title: 'Book Store',
+    shortDescription: `A minimum viable product that allows users to add, delete, and list books from a 
+    third party API.`,
+    longDescription: `Bookstore is a minimum viable product where users visualize a list of books and 
+    a representative graph of the reading progress of each one. The users can add to and eliminate books 
+    from a third-party API that preserves the books' data.`,
+    tags: ['JavaScript', 'React', 'Redux', 'SCSS'],
+    linkLive: 'https://gabyse1.github.io/bookstore/',
+    linkSource: 'https://github.com/gabyse1/bookstore',
+  },
+  {
+    id: 3,
+    imageDesktop: 'images/img-space-travelers.png',
+    title: 'Space Travelers',
+    shortDescription: `A minimum viable product that offers users information about space travels 
+    classified between rockets, dragons, and missions.`,
+    longDescription: `The website offers users information about space travels classified between rockets, 
+    dragons, and missions, information that is fetched from a third-party API. Users can book and cancel 
+    rocket and dragon reservations and also join and leave missions. The Profile page lists all user choices.`,
+    tags: ['JavaScript', 'React', 'Redux', 'SCSS'],
+    linkLive: 'https://spacetravelsgaby.herokuapp.com/',
+    linkSource: 'https://github.com/gabyse1/space-travel',
+  },
+  {
+    id: 4,
     imageDesktop: 'images/img-rent-a-movie.png',
     title: 'Rent a Movie',
     shortDescription: `A website that allows the user to rent movies, make reservations, leave likes, 
@@ -23,7 +64,7 @@ const cards = [
     linkSource: 'https://github.com/zhadier/Rent-A-Movie',
   },
   {
-    id: 2,
+    id: 5,
     imageDesktop: 'images/img-math-magicians.png',
     title: 'Math Magicians',
     shortDescription: `This Single Page App (SPA) allows users to make simple math calculations and read 
@@ -35,7 +76,7 @@ const cards = [
     linkSource: 'https://github.com/gabyse1/math-magicians',
   },
   {
-    id: 3,
+    id: 6,
     imageDesktop: 'images/img-leaderboard.png',
     title: 'Leaderboard',
     shortDescription: 'This minimalistic design website displays scores submitted by different players.',
@@ -46,7 +87,7 @@ const cards = [
     linkSource: 'https://github.com/gabyse1/leaderboard',
   },
   {
-    id: 4,
+    id: 7,
     imageDesktop: 'images/img-todo-list.png',
     title: 'Todo List',
     shortDescription: `A tool that helps to organize your day. It simply lists the things that you need 
@@ -58,7 +99,7 @@ const cards = [
     linkSource: 'https://github.com/gabyse1/to-do-list',
   },
   {
-    id: 5,
+    id: 8,
     imageDesktop: 'images/img-awesome-books.png',
     title: 'Awesome Books',
     shortDescription: 'A simple website that displays a list of books and allows you to add and remove books from that list.',
@@ -68,7 +109,7 @@ const cards = [
     linkSource: 'https://github.com/gabyse1/awesome-books',
   },
   {
-    id: 6,
+    id: 9,
     imageDesktop: 'images/img-environment-action.png',
     title: 'Environment Action',
     shortDescription: `Website to publicize the early arrival of a new edition of the conference and exhibition 

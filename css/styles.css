@@ -55,8 +55,11 @@ body > * {
   padding: 8px;
 }
 
-a.link {
+a {
   text-decoration: none;
+}
+
+a.link {
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.25rem;
