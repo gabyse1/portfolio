@@ -83,7 +83,7 @@ const cards = [
     longDescription: `This minimalistic design website displays scores submitted by different players. 
     The user can also create more than a game and submit his scores in all of them.`,
     tags: ['JavaScript', 'HTML', 'SCSS', 'Webpack'],
-    linkLive: 'https://gabyse1.github.io/leaderboard/dist/',
+    linkLive: 'https://gabyse1.github.io/leaderboard/',
     linkSource: 'https://github.com/gabyse1/leaderboard',
   },
   {
@@ -95,7 +95,7 @@ const cards = [
     longDescription: `A tool that helps to organize your day. It simply lists the things that you need 
     to do and allows you to mark them as complete. `,
     tags: ['JavaScript', 'HTML', 'SCSS', 'Webpack'],
-    linkLive: 'https://gabyse1.github.io/to-do-list/dist/',
+    linkLive: 'https://gabyse1.github.io/to-do-list',
     linkSource: 'https://github.com/gabyse1/to-do-list',
   },
   {
@@ -117,7 +117,7 @@ const cards = [
     longDescription: `Website to publicize the early arrival of a new edition of the conference and exhibition 
     that Environment Action organizes every two years.`,
     tags: ['JavaScript', 'HTML', 'SCSS'],
-    linkLive: 'https://gabyse1.github.io/repo-capston-project-01/',
+    linkLive: 'https://gabyse1.github.io/environment-action/',
     linkSource: 'https://github.com/gabyse1/repo-capston-project-01',
   },
 ];
