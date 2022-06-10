@@ -26,8 +26,8 @@ const cards = [
   },
   {
     id: 2,
-    imageDesktop: 'images/img-scan-budget.png',
-    title: 'ScanBudget',
+    imageDesktop: 'images/img-snap-budget.png',
+    title: 'SnapBudget',
     shortDescription: `A mobile web application where users can manage their budget.`,
     longDescription: `A mobile web application where users can manage their budget. 
     Users can have a list of transactions associated with a category, so that they 
