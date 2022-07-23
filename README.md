@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portafolio
+# Portfolio
 
 > The portfolio displays the software developer presentation like skills, software projects, and a contact form.
 
